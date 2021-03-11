@@ -22,16 +22,28 @@
 //  alert(‘Вы вошли в систему’)
 // } else  alert(‘Пароль не верный’)
 
+
+let regInfo = [];
+
 const sections1 = document.querySelector('.log-page');
-
 const sections2 = document.querySelector('.get-page');
-
 const sections3 = document.querySelector('.welcome-page');
 
-const regInfo = [];
+const inputEmail = document.querySelector('#get_input_email');
+const inputPass = document.querySelector('#get_input_pass');
+const inputPassRepeat = document.querySelector('#get_input_repeat_pass');
+
+const regBtn = document.querySelector('#reg-btn');
+
+// const handleRegistration = () => {
+//     regInfo.push(inputEmail.value);
+//     regInfo.push(inputPass.value);
+//     regInfo.push(inputPassRepeat.value);
+// };
+
 
 function MainConstructor() {
-    this.ShowMainPage = function() {
+    this.showMainPage = function() {
         sections1.style.display = 'flex'
         sections2.style.display = 'none'
         sections3.style.display = 'none'
@@ -46,9 +58,14 @@ function MainConstructor() {
         sections2.style.display = 'none'
         sections3.style.display = 'flex'
     };
-
+    this.saveReg = function () {
+        regInfo.push(inputEmail.value);
+        regInfo.push(inputPass.value);
+        regInfo.push(inputPassRepeat.value);
+    };
 }
 
+console.log(regInfo);
 
 
 const newObj = new MainConstructor();
