@@ -22,26 +22,31 @@
 //  alert(‘Вы вошли в систему’)
 // } else  alert(‘Пароль не верный’)
 
-const sections1 = document.getElementsByClassName('.log-page');
+const sections1 = document.querySelector('.log-page');
 
-const sections2 = document.getElementsByClassName('.get-page');
+const sections2 = document.querySelector('.get-page');
 
-const sections3 = document.getElementsByClassName('.welcome-page');
+const sections3 = document.querySelector('.welcome-page');
+
+const regInfo = [];
 
 function MainConstructor() {
     this.ShowMainPage = function() {
         sections1.style.display = 'flex'
         sections2.style.display = 'none'
         sections3.style.display = 'none'
-    }
-    this.showAuthPage = function() {
-        const element = document.querySelector('.get-page');
-        element.add.style.display = 'block';
-    }
+    };
     this.showRegistrationPage = function() {
-        const element = document.querySelector('.welcome-page');
-        element.add.style.display = 'block';
-    }
+        sections1.style.display = 'none'
+        sections2.style.display = 'flex'
+        sections3.style.display = 'none'
+    };
+    this.showAuthPage = function() {
+        sections1.style.display = 'none'
+        sections2.style.display = 'none'
+        sections3.style.display = 'flex'
+    };
+
 }
 
 

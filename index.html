@@ -13,14 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button click='newObj.ShowMainPage()'>
-        Show 1
+    <button onclick='newObj.ShowMainPage()'>
+        MainPage
     </button>
-    <button>
-        Show 2
+    <button onclick='newObj.showAuthPage()'>
+        AuthPage
     </button>
-    <button>
-        Show 3
+    <button onclick='newObj.showRegistrationPage()'>
+        RegistrationPage
     </button>
     <section class="log-page">
         <div class="log-title-container">
@@ -48,14 +48,14 @@
         </div>
         <div class="get-form-container">
             <form class="get-form">
-                <label for="input_email">Email address</label>
-                <input id="input_email" class="get-input" type="email" name="Email" placeholder="Email address">
+                <label for="get_input_email">Email address</label>
+                <input id="get_input_email" class="get-input" type="email" name="Email" placeholder="Email address">
                 
-                <label for="input_pass">Password</label>
-                <input id="input_pass" class="get-input" type="text" name="password" placeholder="Password">
+                <label for="get_input_pass">Password</label>
+                <input id="get_input_pass" class="get-input" type="text" name="password" placeholder="Password">
 
-                <label for="input_repeat_pass">Repeat Password</label>
-                <input id="input_repeat_pass" class="get-input" type="text" name="password" placeholder="Repeat Password">
+                <label for="get_input_repeat_pass">Repeat Password</label>
+                <input id="get_input_repeat_pass" class="get-input" type="text" name="password" placeholder="Repeat Password">
                 <button class="btn">
                     Sign Up
                 </button>
@@ -68,18 +68,18 @@
         <div>
             <img src="./img/3.png" alt="3">
         </div>
-        <div class="get-form-container">
-            <form class="get-form">
-                <label for="input_email">Email address</label>
-                    <input id="input_email" class="get-input" type="email" name="Email" placeholder="Email address">
+        <div class="welcome-form-container">
+            <form class="welcome-form">
+                <label for="welcome_input_email">Email address</label>
+                    <input id="welcome_input_email" class="welcome-input" type="email" name="Email" placeholder="Email address">
                     
-                    <label for="input_pass">Password</label>
-                    <input id="input_pass" class="get-input" type="text" name="password" placeholder="Password">
+                    <label for="welcome_input_pass">Password</label>
+                    <input id="welcome_input_pass" class="welcome-input" type="text" name="password" placeholder="Password">
                     <button class="btn">
                         Log In
                     </button>
             </form>
-        <a class="get-link" href="#">I don't have an account yet</a>
+        <a class="welcome-link" href="#">I don't have an account yet</a>
         </div>
     </section>
 </body>
