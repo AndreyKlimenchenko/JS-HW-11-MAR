@@ -3,6 +3,33 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.header-btn {
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: 2.653846px;
+    color: #1958DB;
+}
+
+.header-btn:hover {
+    color: black;
+    transform: scale(1.15);
+}
+
 .log-page, .get-page, .welcome-page {
     padding-top: 100px;
     align-items: baseline;
@@ -91,6 +118,10 @@ body {
     color: #1958DB;
 }
 
+.get-link:hover {
+    color: black;
+}
+
 .get-form {
     display: flex;
     flex-direction: column;
@@ -141,6 +172,10 @@ body {
     line-height: 72px;
     text-decoration-line: underline;
     color: #1958DB;
+}
+
+.welcome-link:hover {
+    color: black;
 }
 
 .welcome-input {
